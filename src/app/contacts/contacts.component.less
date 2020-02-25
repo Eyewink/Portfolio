@@ -1,0 +1,27 @@
+:host {
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	
+	align-content: center;
+	justify-content: center;
+	
+	> div {
+		display: grid;
+		justify-items: center;
+		
+		> a {
+			display: block;
+			padding-bottom: 1rem;
+			border-bottom: 4px solid var(--orange);
+		}
+		
+		> span {
+			display: inline-block;
+			width: auto;
+			background: var(--bg-color);
+			margin-top: -0.65rem;
+			padding: 0 10px;
+		}
+	}
+}

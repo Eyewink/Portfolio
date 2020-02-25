@@ -1,0 +1,9 @@
+/* Цвета */
+body {
+    --font-color:   #333;
+    --bg-color:     #fff;
+
+    --blue:         #3fa9f5;
+    --green:        #7ac943;
+    --orange:       #ff931e;
+}
