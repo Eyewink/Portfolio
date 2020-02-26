@@ -15,4 +15,14 @@ export class ExamplesComponent implements OnInit {
   ngOnInit (): void {
   }
 
+  public showGallery = (state) => {
+    this.nav.toggle();
+    this.gallery.show(state);
+  }
+
+  public hideGallery = () => {
+    this.nav.toggle();
+    this.gallery.hide()
+  }
+
 }

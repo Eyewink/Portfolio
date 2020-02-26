@@ -13,6 +13,7 @@ export class NavigationService {
         this.router = router;
     }
 
+    private enabled = true;
     private canNavigate = true;
     private state = 0;
     private total = 5;
@@ -20,46 +21,44 @@ export class NavigationService {
     private delay;
 
     private onScroll = (event) => {
+        if (this.enabled) {
 
-        console.log(event);
+            clearTimeout(this.delay);
+            this.delay = setTimeout(() => this.canNavigate = true, 100);
 
-        clearTimeout(this.delay);
-        this.delay = setTimeout(() => this.canNavigate = true, 100);
-
-        if (this.canNavigate) {
-            const delta = event['deltaY'];
-            if(delta != 0) {
-                this.navigate(delta > 0);
-                this.canNavigate = false;
+            if (this.canNavigate) {
+                const delta = event['deltaY'];
+                if (delta != 0) {
+                    this.navigate(delta > 0);
+                    this.canNavigate = false;
+                }
             }
         }
     };
 
     private onKeyPress = (event: KeyboardEvent) => {
 
-        switch (event.key) {
-            case 'ArrowDown':
-                this.navigate(true);
-                break;
-            case 'ArrowUp':
-                this.navigate(false);
-                break;
-            case 'ArrowLeft':
-                this.navigate(false);
-                break;
-            case 'ArrowRight':
-                this.navigate(true);
-                break;
+        if(this.enabled) {
+            switch (event.key) {
+                case 'ArrowDown':
+                    this.navigate(true);
+                    break;
+                case 'ArrowUp':
+                    this.navigate(false);
+                    break;
+                case 'ArrowLeft':
+                    this.navigate(false);
+                    break;
+                case 'ArrowRight':
+                    this.navigate(true);
+                    break;
+            }
         }
     };
 
     private navigate = (direction: boolean) => {
 
-
-        this.state = Math.min(this.state + (direction ? 1 : -1), this.total);
-        if (this.state < 0) {
-            this.state = 0;
-        }
+        this.state = Math.max(0 ,Math.min(this.state + (direction ? 1 : -1), this.total));
 
         switch (this.state) {
             case 0:
@@ -81,5 +80,8 @@ export class NavigationService {
         return Math.min(this.state - 2, this.total - 3);
     }
 
+    public toggle = () => {
+        this.enabled = !this.enabled;
+    }
 }
 

@@ -1,4 +1,4 @@
-<app-gallery *ngIf="gallery.state()" (click)="gallery.hide()"  [className]="gallery.getClass()"></app-gallery>
+<app-gallery *ngIf="gallery.state()" (click)="this.hideGallery()"  [className]="gallery.getClass()"></app-gallery>
 
 <div [ngStyle]="{'margin-left': '-' + this.nav.getOffset()*(100) + 'vw'}">
 
@@ -13,50 +13,50 @@
 			же расскажу и покажу немного больше, чем продемонстрировано на&nbsp;примерах работ далее.</p>
 	</section>
 
-	<section class="oog" (click)="gallery.show('oog')">
+	<section class="oog" (click)="this.showGallery('oog')">
 		<div class="logo"></div>
 		<p>Система автоматизации деятельности сотрудников АМиПМ, ОИВ города Москвы и подведомственных им
 			государственных учреждений, направленной на прием и обработку обращений граждан и
 			организаций</p>
 	</section>
 
-	<section class="mmc" (click)="gallery.show('mmc')">
+	<section class="mmc" (click)="this.showGallery('mmc')">
 		<div class="logo"></div>
 		<p>Автоматизация процесса оформления ВНЖ, РВП, Гражданства в многофункциональном миграционном
 			центре города Москвы</p>
 	</section>
 
-	<section class="x5" (click)="gallery.show('x5')">
+	<section class="x5" (click)="this.showGallery('x5')">
 		<div class="logo"></div>
 		<p>Инструмент по анализу Big Data. Система предлагает решения по оптимизации выкладки и
 			ценообразования продукции распространяемой в сети Х5</p>
 	</section>
 
-	<section class="ptw" (click)="gallery.show('ptw')">
+	<section class="ptw" (click)="this.showGallery('ptw')">
 		<div class="logo"></div>
 		<p>Система мониторинга инцидентов на промышленных объектах. Визуальный и автоматизированный контроль
 			деятельности обслуживающего персонала</p>
 	</section>
 
-	<section class="dit" (click)="gallery.show('dit')">
+	<section class="dit" (click)="this.showGallery('dit')">
 		<div class="logo"></div>
 		<p>Интранет портал, помогающий в адаптации новых сотрудников, а так же автоматизирующий процессы
 			операционной деятельности сотрудников ДИТ города Москвы</p>
 	</section>
 
-	<section class="mguu" (click)="gallery.show('mguu')">
+	<section class="mguu" (click)="this.showGallery('mguu')">
 		<div class="logo"></div>
 		<p>Реинженеринг системы дистанционного обучения МГУУ правительства Москвы</p>
 	</section>
 
 
-	<section class="megafon" (click)="gallery.show('megafon')">
+	<section class="megafon" (click)="this.showGallery('megafon')">
 		<div class="logo"></div>
 		<p>Модуль, используемый для автоматизации бизнес-процесса сбора обратной связи по обращениям частных
 			клиентов</p>
 	</section>
 
-	<section class="mts" (click)="gallery.show('mts')">
+	<section class="mts" (click)="this.showGallery('mts')">
 		<div class="logo"></div>
 		<p>Один из многочисленных модулей, разработанный для упрощения работы служб технической поддержки и
 			эксплуатации компании МТС</p>

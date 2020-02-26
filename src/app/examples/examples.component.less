@@ -12,11 +12,12 @@
 		> section {
 			font-family: 'Fira Sans Condensed', sans-serif;
 			display: grid;
+			grid-template-rows: 3fr 4fr;
 			height: 100vh;
 			
-			box-shadow: -7px 0 10px rgba(0, 0, 0, .05);
+			color: white;
 			
-			grid-template-rows: 3fr 4fr;
+			box-shadow: -7px 0 10px rgba(0, 0, 0, .05);
 			
 			> p {
 				padding: 0 50px 0 100px;
@@ -28,7 +29,6 @@
 				background-image: url("/assets/images/bg/bg-intro.svg");
 				background-repeat: repeat-x;
 				background-position: 0 0;
-				color: white;
 				
 				> h1 {
 					width: 100%;
@@ -46,38 +46,35 @@
 			
 			&.oog {
 				background-color: #489cd5;
-				background-repeat: repeat-x;
-				color: white;
+			}
+			
+			&.mmc {
+				color: var(--font-color);
 			}
 			
 			&.x5 {
 				background-color: #666;
-				background-repeat: repeat-x;
-				color: white;
 			}
 			
 			&.ptw {
 				background-color: #e6e6e6;
-				background-repeat: repeat-x;
-				
+				color: var(--font-color);
+			}
+			
+			&.dit {
+				color: var(--font-color);
 			}
 			
 			&.mguu {
 				background-color: #895879;
-				background-repeat: repeat-x;
-				color: white;
 			}
 			
 			&.megafon {
 				background-color: #00985f;
-				background-repeat: repeat-x;
-				color: white;
 			}
 			
 			&.mts {
 				background-color: #e20613;
-				background-repeat: repeat-x;
-				color: white;
 			}
 			
 			@history: oog, mmc, x5, ptw, dit, mguu, megafon, mts;
