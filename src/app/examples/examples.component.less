@@ -25,7 +25,7 @@
 			&.intro {
 				font-family: 'Fira Sans', sans-serif;
 				background-color: #ff1d25;
-				background-image: url("../../images/bg/bg-intro.svg");
+				background-image: url("/assets/images/bg/bg-intro.svg");
 				background-repeat: repeat-x;
 				background-position: 0 0;
 				color: white;
@@ -46,42 +46,36 @@
 			
 			&.oog {
 				background-color: #489cd5;
-				background-image: url("../../images/bg/bg-oog.svg");
 				background-repeat: repeat-x;
 				color: white;
 			}
 			
 			&.x5 {
 				background-color: #666;
-				background-image: url("../../images/bg/bg-x5.svg");
 				background-repeat: repeat-x;
 				color: white;
 			}
 			
 			&.ptw {
 				background-color: #e6e6e6;
-				background-image: url("../../images/bg/bg-ptw.svg");
 				background-repeat: repeat-x;
 				
 			}
 			
 			&.mguu {
 				background-color: #895879;
-				background-image: url("../../images/bg/bg-mguu.svg");
 				background-repeat: repeat-x;
 				color: white;
 			}
 			
 			&.megafon {
 				background-color: #00985f;
-				background-image: url("../../images/bg/bg-megafon.svg");
 				background-repeat: repeat-x;
 				color: white;
 			}
 			
 			&.mts {
 				background-color: #e20613;
-				background-image: url("../../images/bg/bg-mts.svg");
 				background-repeat: repeat-x;
 				color: white;
 			}
@@ -89,13 +83,15 @@
 			@history: oog, mmc, x5, ptw, dit, mguu, megafon, mts;
 			each(@history, {
 				&.@{value} {
-					background-image: url("../../images/preview/@{value}.png"), url("../../images/bg/bg-@{value}.svg");
+					background-image: url("/assets/images/preview/@{value}.png"), url("/assets/images/bg/bg-@{value}.svg");
 					background-repeat: no-repeat, repeat-x;
 					background-position: 100px e('calc(100vh - 250px)'), 0 0;
 					background-size: 500px, auto;
 					
+					cursor: pointer;
+					
 					> .logo {
-						background: url("../../images/logos/@{value}.svg") no-repeat 50% 50%;
+						background: url("/assets/images/logos/@{value}.svg") no-repeat 50% 50%;
 					}
 				}
 			});

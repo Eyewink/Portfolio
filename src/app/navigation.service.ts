@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 export class NavigationService {
 
     constructor(events: EventManager, router: Router) {
-        events.addGlobalEventListener('window', 'wheel', this.onScroll);
+        events.addGlobalEventListener('document', 'wheel', this.onScroll);
         events.addGlobalEventListener('document', 'keyup', this.onKeyPress);
         this.router = router;
     }
@@ -19,15 +19,19 @@ export class NavigationService {
     private router: Router;
     private delay;
 
-    private onScroll = (event: UIEvent) => {
+    private onScroll = (event) => {
+
+        console.log(event);
 
         clearTimeout(this.delay);
-        this.delay = setTimeout(() => this.canNavigate = true, 35);
+        this.delay = setTimeout(() => this.canNavigate = true, 100);
 
         if (this.canNavigate) {
             const delta = event['deltaY'];
-            this.navigate(delta > 0);
-            this.canNavigate = false;
+            if(delta != 0) {
+                this.navigate(delta > 0);
+                this.canNavigate = false;
+            }
         }
     };
 
@@ -74,7 +78,7 @@ export class NavigationService {
     };
 
     public getOffset = () => {
-        return this.state - 2;
+        return Math.min(this.state - 2, this.total - 3);
     }
 
 }

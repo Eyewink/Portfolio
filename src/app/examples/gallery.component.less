@@ -1,0 +1,31 @@
+:host {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	
+	justify-content: center;
+	align-content: center;
+	
+	background: rgba(0,0,0,.7);
+	
+	@history: oog, mmc, x5, ptw, dit, mguu, megafon, mts;
+	each(@history, {
+		&.@{value} {
+			> div {
+				background-image: url("/assets/images/full/@{value}.png");
+			}
+		}
+	});
+	> div {
+		display: grid;
+		width: 80vw;
+		height: 80vh;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+	}
+	
+}
