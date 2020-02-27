@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigationService } from "./navigation.service";
-import { RouterOutlet } from "@angular/router";
+import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 import { routerAnimations } from "./animations";
 
 @Component({

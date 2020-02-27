@@ -78,10 +78,14 @@ export class NavigationService {
 
     public getOffset = () => {
         return Math.min(this.state - 2, this.total - 3);
-    }
+    };
 
     public toggle = () => {
         this.enabled = !this.enabled;
+    };
+
+    public init = (state:number) => {
+        if(this.state === 0) this.state = state;
     }
 }
 
