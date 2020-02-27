@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+<defs><style>.cls-1{fill:#999;}.cls-2{fill:#fff;}</style></defs>
+<title>Dmitry Rukin Loader</title>
+
+
+
+<polygon class="cls-1" points="52.95 60.83 55.69 60.49 55.69 57.92 52.95 56.67 52.95 60.83">
+    <animateTransform attributeName="transform"
+                          id="animation"
+                          type="rotate"
+                          from="0 65 60"
+                          to="360 75 50"
+                          dur="1s"
+                          begin="0;animation.end+.1s"
+                          />
+</polygon>
+<polygon class="cls-1" points="52.95 60.83 52.95 64.53 47.88 64.53 48.81 66.71 51.98 66.71 55.69 64.33 55.69 60.49 52.95 60.83">
+    <animateTransform attributeName="transform"
+                          type="rotate"
+                          from="0 75 45"
+                          to="360 55 35"
+                          dur=".8s"
+                          begin="0;animation.end+.1s"
+                          />
+</polygon>
+<polygon class="cls-1" points="54.55 66.71 54.91 70.03 56.92 70.03 56.92 64.53 55.69 64.53 55.69 64.33 51.98 66.71 54.55 66.71">
+    <animateTransform attributeName="transform"
+                          type="rotate"
+                          from="0 25 75"
+                          to="360 45 55"
+                          dur=".6s"
+                          begin="0;animation.end+.1s"
+                          />
+</polygon>
+<path class="cls-1" d="M47.88,64.53H47.5l.28-.26-1.28-3c0,.12,0,.24-.07.35a5.46,5.46,0,0,1-1.18,2.89h-1V70h2l.35-3.32h2.24Z">
+    <animateTransform attributeName="transform"
+                          type="rotate"
+                          from="0 75 75"
+                          to="360 65 65"
+                          dur=".9s"
+                          begin="0;animation.end+.1s"
+                          />
+</path>
+<polygon class="cls-1" points="50.1 54.32 52.95 54.32 52.95 56.67 55.69 57.92 55.69 52.2 47.73 52.2 47.48 54.17 49.99 55.32 50.1 54.32">
+    <animateTransform attributeName="transform"
+                          type="rotate"
+                          from="0 35 35"
+                          to="360 25 45"
+                          dur=".7s"
+                          begin="0;animation.end+.1s"
+                          />
+</polygon>
+<path class="cls-1" d="M47.48,54.17l-.3,2.42c-.27,2.08-.47,3.58-.68,4.7l1.28,3a5.6,5.6,0,0,0,1.39-3,45.78,45.78,0,0,0,.7-4.82L50,55.32Z">
+    <animateTransform attributeName="transform"
+                          type="rotate"
+                          from="0 75 35"
+                          to="360 55 25"
+                          dur=".9s"
+                          begin="0;animation.end+.1s"
+                          />
+</path>
+
+
+<path class="cls-1" d="M67,54.24h1.49a4.33,4.33,0,0,1,1.52.24l.4-2.1a10.13,10.13,0,0,0-1.9-.18H64.21v6.67L67,57.1Z">
+    <animateTransform attributeName="transform"
+                          type="rotate"
+                          from="360 45 45"
+                          to="0 55 45"
+                          dur=".8s"
+                          begin="0;animation.end+.1s"
+                          />
+</path>
+<polygon class="cls-1" points="64.22 66.71 66.99 66.71 66.99 63.09 64.22 61.83 64.22 66.71">
+    <animateTransform attributeName="transform"
+                          type="rotate"
+                          from="360 65 45"
+                          to="0 45 55"
+                          dur=".7s"
+                          begin="0;animation.end+.1s"
+                          />
+</polygon>
+<path class="cls-1" d="M72.83,53.36a5.58,5.58,0,0,0-2.43-1l-.4,2.1a2.2,2.2,0,0,1,.59.31,2.33,2.33,0,0,1,.89,2A3,3,0,0,1,71,58.59l3.17-.39a5.84,5.84,0,0,0,.18-1.38A4.1,4.1,0,0,0,72.83,53.36Z">
+    <animateTransform attributeName="transform"
+                          type="rotate"
+                          from="360 45 75"
+                          to="0 35 35"
+                          dur=".9s"
+                          begin="0;animation.end+.1s"
+                          />
+</path>
+<path class="cls-1" d="M69,59.54l-.4,2.11h0c2.77,0,4.92-1.09,5.51-3.45L71,58.59A2.48,2.48,0,0,1,69,59.54Z">
+    <animateTransform attributeName="transform"
+                          type="rotate"
+                          from="360 75 35"
+                          to="0 55 25"
+                          dur=".8s"
+                          begin="0;animation.end+.1s"
+                          />
+</path>
+<path class="cls-1" d="M68.48,59.57H67V57.1l-2.78,1.77v3L67,63.1V61.65h1.65l.4-2.11A5.12,5.12,0,0,1,68.48,59.57Z">
+    <animateTransform attributeName="transform"
+                          type="rotate"
+                          from="360 35 35"
+                          to="0 55 55"
+                          dur=".7s"
+                          begin="0;animation.end+.1s"
+                          />
+</path>
+
+
+
+<circle class="cls-2" cx="60" cy="60" r="1.5"/>
+
+
+
+</svg>
