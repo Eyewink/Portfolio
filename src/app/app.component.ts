@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigationService } from "./navigation.service";
-import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { routerAnimations } from "./animations";
 
 @Component({
@@ -12,7 +12,8 @@ import { routerAnimations } from "./animations";
 	]
 })
 export class AppComponent {
-	constructor(private nav: NavigationService ) {
+	constructor(private nav: NavigationService) {
+		this.nav.init(0);
 	}
 
 	prepareRoute(outlet: RouterOutlet) {
